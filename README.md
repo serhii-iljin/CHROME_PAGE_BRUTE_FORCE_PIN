@@ -1,2 +1,3 @@
 # CHROME_PAGE_BRUTE_FORCE_PIN
-Python+selenium to brute force the pin code on page.
+Python+Selenium to brute force the pin code on page.
+Get more information about Selenium - https://www.selenium.dev/.
