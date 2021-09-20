@@ -31,7 +31,7 @@ if __name__ == '__main__':
         for j in range(1, 10):        #To make sure that the field is cleared.
             passwordfield.clear()
 
-
+  #LETS COUNT BRUTE FORCING TIME... CHEKING ONE PASSWORD TAKES AROUND 0.1S, SO THAT 5 DIGIT PASSWORD WILL BE BRUTE FORCED IN 0.1S*1E5/60/60 = 2.7 HOURS.
 
 
 
