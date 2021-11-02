@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 if __name__ == '__main__':
     browser = webdriver.Chrome('/Users/sergey/Downloads/chromedriver')
-    browser.get('https://view.genial.ly/60d47808f934aa0dd8819a3a/horizontal-infographic-timeline-11-klas-pshe')
+    browser.get('https://view.genial.ly/...')
     acceptcookies = browser.find_element(By.XPATH, "//*[@id=\"onetrust-button-group\"]/div")
     time.sleep(2)
     acceptcookies.click()
